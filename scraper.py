@@ -5,14 +5,14 @@
 # import lxml.html
 #
 # # Read in a page
-# html = scraperwiki.scrape("http://foo.com")
+# html = scraperwiki.scrape("https://www.dpc.sa.gov.au/about-the-department/accountability/freedom-of-information/recent-foi-applications")
 #
 # # Find something on the page using css selectors
 # root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")
+# root.cssselect("#table55597")
 #
 # # Write out to the sqlite database using scraperwiki library
-# scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
+# scraperwiki.sqlite.save(unique_keys=['name'], data={"Agency": "Reference No.", "Date of determination": "FOI request"})
 #
 # # An arbitrary query against the database
 # scraperwiki.sql.select("* from data where 'name'='peter'")
